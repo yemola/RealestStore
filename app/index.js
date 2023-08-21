@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-// import ProductsScreen from "./screens/ProductsScreen";
+import ProductsScreen from "./screens/ProductsScreen";
 import ListingsScreen from "./screens/ListingsScreen";
 
 import colors from "./config/colors";
@@ -11,7 +11,8 @@ export default function Page() {
       <View>
         <Text style={styles.heading}>All Listing</Text>
       </View>
-      <ListingsScreen />
+      {/* <ListingsScreen /> */}
+      <ProductsScreen />
     </>
   );
 }

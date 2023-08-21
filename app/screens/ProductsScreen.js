@@ -35,13 +35,7 @@ function ListingsScreen({ navigation }) {
   const [selectedCategory, setSelectedCategory] = useState("");
   const getCategoriesApi = useApi(categoriesApi.getCats);
 
-  // fetch("https://fakestoreapi.com/products?limit=3")
-  //   .then((res) => res.json())
-  //   .then((json) => console.log(json));
-
   const categories = getCategoriesApi.data;
-
-  // console.log("categories: ", categories);
 
   const filteredData = selectedCategory
     ? allData.filter((listing) => listing.category === selectedCategory)
